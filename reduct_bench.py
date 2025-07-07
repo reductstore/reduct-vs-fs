@@ -5,7 +5,7 @@ from datetime import datetime
 
 from reduct import Client as ReductClient, Batch
 
-BLOB_SIZE = 10_000
+BLOB_SIZE = 50_000
 BATCH_MAX_SIZE = 8_000_000
 BATCH_MAX_RECORDS = 80
 

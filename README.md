@@ -16,4 +16,18 @@ python reduct_bench.py
 python timescale_fs_bench.py
 ```
 
+# Results
 
+
+| Chunk Size | Operation | TimescaleDB + FS, blob/s | ReductStore, blob/s | ReductStore, % |
+|------------|-----------|--------------------------|---------------------|----------------|
+| 10 KB      | Write     | 2244                     | 3892                | +73%           |
+|            | Read      | 13540                    | 31619               | +133%          |
+| 50 KB      | Write     | 1020                     | 2052                | +101%          |
+|            | Read      | 13062                    | 13887               | +6%            |
+| 100 KB     | Write     | 2121                     | 2718                | +28%           |
+|            | Read      | 12324                    | 7527                | -39%           |
+| 500 KB     | Write     | 1543                     | 1963                | +27%           |
+|            | Read      | 8677                     | 1967                | -77%           |
+| 1 MB       | Write     | 1146                     | 2297                | +100%          |
+|            | Read      | 5203                     | 1281                | -75%           |

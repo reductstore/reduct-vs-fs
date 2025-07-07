@@ -19,6 +19,8 @@ services:
       RS_BUCKET_1_NAME: benchmark
       RS_BUCKET_1_QUTA_TYPE: FIFO
       RS_BUCKET_1_QUOTA_SIZE: 50GB
+      RS_BUCKET_1_MAX_BLOCK_SIZE: 512MB
+      RS_BUCKET_1_MAX_B
 
     volumes:
       - ${PWD}/data/reductstore:/data
