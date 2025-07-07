@@ -9,7 +9,7 @@ import psycopg2
 import psycopg2.extras
 from psycopg2.extensions import ISOLATION_LEVEL_AUTOCOMMIT
 
-BLOB_SIZE = 10_000
+BLOB_SIZE = 50_000
 BATCH_MAX_RECORDS = 80
 
 BLOB_COUNT = min(1000, 1_000_000_000 // BLOB_SIZE)
